@@ -1,0 +1,28 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:9289",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "LocalViewer": {
+      "commandName": "Project",
+      "commandLineArgs": "-p \"C:\\Dropbox\\Kode\\SpaceBattlez\\TestBots\\KamikazeBot\\bin\\Release\\netcoreapp2.0\\win10-x64\\KamikazeBot.exe\" -o \"c:\\temp\\SpaceBattlez\"",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5000"
+    }
+  }
+}

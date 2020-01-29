@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 50px;
+    font-family: sans-serif;
+    background-color: #333;
+}
+
+html {
+    background-color: #333;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+*, :after, :before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+.app {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 75vh
+}
+
+.app, .game-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.game-container {
+    height: 100%
+}
+
+.game {
+    width: 75vmin;
+    height: 75vmin
+}
+
+.button {
+    padding: 0 16px;
+    background: #666;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 30px
+}
+
+.topbar div {
+    line-height: 30px;
+    height: 30px
+}
+
+.button.active {
+    background: purple
+}
+
+.frame-bar {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%
+}
+
+.frame-bar>div {
+    -ms-flex: 1 1;
+    flex: 1 1;
+    text-align: center
+}
+
+.frame-bar .current-frame, .frame-bar .past-frame {
+    background-color: #708090
+}
+
+.frame-bar .future-frame {
+    background-color: #333
+}
+
+/*# sourceMappingURL=main.3e1168c4.css.map*/
