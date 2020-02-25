@@ -1,2 +1,5 @@
 LocalArena/bin
 LocalArena/obj/
+.vs/
+ArenaMaster/obj/
+ArenaMaster/bin/

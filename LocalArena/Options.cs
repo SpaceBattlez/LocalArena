@@ -3,17 +3,20 @@ using System;
 using System.IO;
 
 namespace LocalArena
-{
+{   
 
     public class Options
     {
-        [Option('l', "list bots", HelpText = "List all possible enemy bots to battle", SetName = "info")]
+        [Option('b', "list bots", HelpText = "List all possible enemy bots to battle", SetName = "info")]
         public bool ListBots { get; set; }
 
-        [Option('e', "enemy", HelpText = "Name of the enemy bot to battle\nUser -l to list all possible enemy bots", Default = "BasicBot", SetName = "Launch")]
+        [Option('l', "list maps", HelpText = "List all possible maps to use", SetName = "info")]
+        public bool ListMaps { get; set; }
+
+        [Option('e', "enemy", HelpText = "Name of the enemy bot to battle\nUser -l to list all possible enemy bots", Default = "SimpleBot", SetName = "Launch")]
         public string EnemyBot { get; set; }
 
-        [Option('m', "map", HelpText = "Seed name of map to generate.\nExample:\nBattleBotTester.exe -m \"My Awesome Map\"", Default = "Test Map", SetName = "Launch")]
+        [Option('m', "map", HelpText = "Name of map to use.\nExample:\nBattleBotTester.exe -m \"Random\"", Default = "Random", SetName = "Launch")]
         public string MapName { get; set; }
 
         [Option('p', "start process", Required = true, HelpText = "Start process to start the local bot\nExample:\nBattleBotTester.exe -p \"MyAwesomeBot.exe\"\nBattleBotTester.exe -p \"Node.js\" -a \"c:\\SpaceBattlez\\MyAwesomeBot.js\"", SetName = "Launch")  ]

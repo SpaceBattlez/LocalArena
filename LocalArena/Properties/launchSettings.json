@@ -17,7 +17,7 @@
     },
     "LocalViewer": {
       "commandName": "Project",
-      "commandLineArgs": "-p \"C:\\Dropbox\\Kode\\SpaceBattlez\\TestBots\\KamikazeBot\\bin\\Release\\netcoreapp2.0\\win10-x64\\KamikazeBot.exe\" -o \"c:\\temp\\SpaceBattlez\"",
+      "commandLineArgs": "-p \"C:\\Dropbox\\Kode\\SpaceBattlez\\Data\\UnitTests\\TestBot1\\TestBot1.exe\" -e score",
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
