@@ -10,10 +10,20 @@ namespace SpaceBattlez
         public IBot Bot { get; set; }
         public int ID { get; set; }
         public bool IsDisqualified { get ; set; }
-
+        public bool Ready => true;
+        
         public List<FleetCommandDto> GetFleetResponse(GameStateDto state)
         {
             return Bot.GameUpdate(state);
+        }
+        
+        public void Kill()
+        {            
+        }
+
+        public Task Start()
+        {
+            return Task.CompletedTask;
         }
     }
 }
