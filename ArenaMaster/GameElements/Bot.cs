@@ -8,7 +8,10 @@ namespace SpaceBattlez.GameElements
 	{		
 		public string Name { get; set; }
 		public int ID { get; set; }
+		public bool Ready { get; }
 
-		public List<FleetCommandDto> GetFleetResponse(GameStateDto state);
+		public List<FleetCommandDto> GetFleetResponse(GameStateDto state);		
+		public Task Start();
+		public void Kill();
 	}
 }
