@@ -10,8 +10,8 @@ namespace SpaceBattlez
     public class ArenaMaster
     {
         private GameState gameState;
-        private BotProcess player;
-        public ArenaMaster(BotProcess player, EnemyBot enemy, Map map)
+        private IBotProcess player;
+        public ArenaMaster(IBotProcess player, EnemyBot enemy, Map map)
         {
             this.player = player;
             player.ID = 2;
