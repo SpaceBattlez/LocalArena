@@ -16,8 +16,7 @@
       }
     },
     "LocalViewer": {
-      "commandName": "Project",
-      "commandLineArgs": "-p \"C:\\Dropbox\\Kode\\SpaceBattlez\\Data\\UnitTests\\TestBot1\\TestBot1.exe\" -e score",
+      "commandName": "Project",      
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
